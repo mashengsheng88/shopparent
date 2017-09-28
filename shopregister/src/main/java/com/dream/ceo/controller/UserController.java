@@ -25,6 +25,7 @@ public class UserController {
         ObjectMapper mapper = new ObjectMapper();
         response.getWriter().write(mapper.writeValueAsString(user));
         response.getWriter().close();
+        System.out.print("11111111111");
     }
 
 }
