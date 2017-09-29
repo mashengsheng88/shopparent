@@ -25,7 +25,7 @@ public class IuserDaoTest {
         User user = iUserDao.selectUser(id);
         System.out.println(user.getUsername());
         System.out.println();
-        System.out.println();
+
     }
 
 
