@@ -1,5 +1,6 @@
 package com.dream.ceo.dao;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.dream.ceo.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +24,8 @@ public class IuserDaoTest {
         long id = 1;
         User user = iUserDao.selectUser(id);
         System.out.println(user.getUsername());
+        System.out.println();
     }
+
 
 }
