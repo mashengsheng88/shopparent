@@ -2,6 +2,7 @@ package com.dream.ceo.service.impl;
 
 import com.dream.ceo.dao.IUserDao;
 import com.dream.ceo.model.User;
+
 import javax.annotation.Resource;
 
 /**
@@ -10,9 +11,11 @@ import javax.annotation.Resource;
 public class UserServiceImpl implements IUserDao {
 
     @Resource
-    private IUserDao userDao;
+    private static IUserDao iUserDao;
 
     public User selectUser(long userId) {
-        return this.userDao.selectUser(userId);
+
+        return this.iUserDao.selectUser(userId);
     }
+
 }
